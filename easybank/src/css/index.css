@@ -33,6 +33,88 @@
   .nav-desktop .nav-right {
     display: none;
   }
+  .hero {
+    max-width: 100%;
+    height: 100vh;
+    background-color: hsl(0deg, 0%, 98%);
+    overflow: hidden;
+  }
+  .hero .hero-left {
+    padding-top: 8rem;
+    text-align: center;
+  }
+  .hero .hero-left h1 {
+    font-size: 2.5rem;
+    color: hsl(233deg, 26%, 24%);
+    margin-bottom: 1rem;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+  .hero .hero-left p {
+    margin-bottom: 2rem;
+  }
+  .hero .hero-left .hero-button {
+    background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+    color: hsl(0deg, 0%, 98%);
+    padding: 0.7rem 2.1rem;
+    text-transform: capitalize;
+    -webkit-border: 1px solid #ffffff;
+    -moz-border: 1px solid #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 1.5rem;
+  }
+  .hero .hero-left button:hover {
+    background-image: linear-gradient(to right, hsl(136deg, 44%, 63%), hsl(192deg, 59%, 66%));
+    cursor: pointer;
+  }
+  .hero .hero-right {
+    position: relative;
+  }
+  .hero .hero-right .heroBg {
+    position: absolute;
+    z-index: 1;
+    top: -17rem;
+    left: 1rem;
+  }
+  .hero .hero-right .phones {
+    position: absolute;
+    z-index: 999;
+    top: -8rem;
+    left: 12rem;
+  }
+  .easy {
+    max-width: 100%;
+    padding: 5rem 10%;
+    background-color: hsl(220deg, 16%, 96%);
+  }
+  .easy h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: hsl(233deg, 26%, 24%);
+    text-align: center;
+  }
+  .easy p {
+    text-align: center;
+  }
+  .easy .cardSection {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    background-color: black;
+  }
+  .easy .cardSection .easyCard {
+    padding-right: 1rem;
+  }
+  .easy .cardSection .easyCard h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    color: hsl(233deg, 26%, 24%);
+  }
+  .easy .cardSection .easyCard p {
+    margin-top: 1.5rem;
+  }
 }
 * {
   margin: 0;
