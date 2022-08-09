@@ -1,0 +1,42 @@
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin bordered($color: #D31B27, $width: 1px) {
+    -webkit-border: $width solid $color;
+    -moz-border: $width solid $color;
+    border: $width solid $color;
+  }
+
+@mixin borderedBottom( $width: 4px) {
+    -webkit-border-bottom: $width solid;
+    -moz-border-bottom: $width solid;
+    border-bottom: $width solid;
+
+    border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%)) 1;
+  }
+
+@mixin button {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: hsl(0, 0%, 98%);
+    padding: 0.7rem 2.1rem;
+    text-transform: capitalize;
+    @include bordered($color: $white);
+    @include border-radius(1.5rem)
+  }
+
+  @mixin transition {
+    -webkit-transition:  all 0.3s ease;
+    -moz-transition:  all 0.3s ease;
+    transition:  all 0.3s ease;
+
+  }

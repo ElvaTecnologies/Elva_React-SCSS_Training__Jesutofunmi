@@ -1,0 +1,139 @@
+@media screen and (max-width: 375px){
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .logo {
+          height: 40px;
+        }
+
+        .nav-toggle {
+          font-size: 1.5rem;
+          color: $darkBlue;
+          background: transparent;
+          border-color: transparent;
+          transition: var(--transition);
+          cursor: pointer;
+        }
+        
+      }
+
+      .nav-desktop{
+        height: 0;
+        overflow: hidden;
+        @include transition;
+        .nav-links{
+          .links > li > a {
+            color: $darkBlue;
+            font-size: 1rem;
+            text-transform: capitalize;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: var(--transition);
+          }
+        }
+
+        .nav-right{
+          display: none;
+        }
+      }
+     
+    
+  .hero{
+    max-width: 100%;
+    height: 100vh;
+    background-color: $veryLightGray;
+    overflow: hidden;
+    
+    .hero-left{
+      padding-top: 8rem;
+      text-align: center;
+
+      h1{
+        font-size: 2.5rem;
+        color: $darkBlue;
+        margin-bottom: 1rem;
+        line-height: 1.15;
+        font-weight: 400;
+        
+      }
+
+      p{
+        margin-bottom: 2rem;
+      }
+
+      .hero-button{
+        @include button;
+      }
+
+      button:hover{
+        background-image: linear-gradient(to right, hsl(136, 44%, 63%),hsl(192, 59%, 66%));
+        cursor: pointer;
+      }
+    }
+
+    .hero-right{
+      position: relative;
+
+      .heroBg{
+        position: absolute;
+        z-index: 1;
+        top: -17rem;
+        left: 1rem;
+      }
+
+      .phones{
+        position: absolute;
+        z-index: 999;
+        top: -8rem;
+        left: 12rem;
+      }
+    } 
+  }   
+   
+  .easy{
+    max-width: 100%;
+    padding: 5rem 10%;
+    background-color: $lightGrayishBlue;
+    
+  
+    h2{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+      color: $darkBlue;
+      text-align: center;
+    }
+    
+    p{
+      text-align: center;
+    }
+  
+    .cardSection{
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      background-color: black;
+  
+      .easyCard{
+        padding-right: 1rem;
+  
+        h3{
+          font-size: 1.5rem;
+          margin-top: 1.5rem;
+          font-weight: 400;
+          color: $darkBlue;
+        }
+  
+        p{
+          margin-top: 1.5rem;
+        }
+      }
+  
+    }
+  }
+      
+   
+}
