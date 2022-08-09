@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@media screen and (max-width: 375px) {
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header .logo {
+    height: 40px;
+  }
+  .nav-header .nav-toggle {
+    font-size: 1.5rem;
+    color: hsl(233deg, 26%, 24%);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-desktop {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .nav-desktop .nav-links .links > li > a {
+    color: hsl(233deg, 26%, 24%);
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+  .nav-desktop .nav-right {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(233deg, 8%, 62%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  padding: auto 3rem;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: #ffffff;
+}
+nav .nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+nav .nav-center .nav-header {
+  flex: 1 auto;
+}
+nav .nav-center .nav-header .nav-toggle {
+  display: none;
+}
+nav .nav-center .nav-desktop {
+  flex: 1.5 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-center .nav-desktop .nav-links .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-center .nav-desktop .nav-links .links li {
+  padding: 0 1rem;
+}
+nav .nav-center .nav-desktop .nav-links .links li a {
+  text-transform: capitalize;
+  color: hsl(233deg, 8%, 62%);
+  padding: 1.1rem 0;
+  transition: all 0.3s ease;
+}
+nav .nav-center .nav-desktop .nav-links .links li a:hover {
+  -webkit-border-bottom: 4px solid;
+  -moz-border-bottom: 4px solid;
+  border-bottom: 4px solid;
+  -o-border-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%)) 1;
+     border-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%)) 1;
+  color: black;
+}
+nav .nav-center .nav-desktop .nav-right .nav-button {
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 98%);
+  padding: 0.7rem 2.1rem;
+  text-transform: capitalize;
+  -webkit-border: 1px solid #ffffff;
+  -moz-border: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1.5rem;
+}
+nav .nav-center .nav-desktop .nav-right button:hover {
+  background-image: linear-gradient(to right, hsl(136deg, 44%, 63%), hsl(192deg, 59%, 66%));
+  cursor: pointer;
+}
+
+.hero {
+  max-width: 90%;
+  height: 100vh;
+  margin: 0 0 0 auto;
+  background-color: hsl(0deg, 0%, 98%);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.hero .hero-left {
+  padding-top: 8rem;
+}
+.hero .hero-left h1 {
+  font-size: 2.5rem;
+  color: hsl(233deg, 26%, 24%);
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  font-weight: 400;
+}
+.hero .hero-left p {
+  margin-bottom: 2rem;
+}
+.hero .hero-left .hero-button {
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 98%);
+  padding: 0.7rem 2.1rem;
+  text-transform: capitalize;
+  -webkit-border: 1px solid #ffffff;
+  -moz-border: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1.5rem;
+}
+.hero .hero-left button:hover {
+  background-image: linear-gradient(to right, hsl(136deg, 44%, 63%), hsl(192deg, 59%, 66%));
+  cursor: pointer;
+}
+.hero .hero-right {
+  position: relative;
+}
+.hero .hero-right .heroBg {
+  position: absolute;
+  z-index: 1;
+  top: -17rem;
+  left: 1rem;
+}
+.hero .hero-right .phones {
+  position: absolute;
+  z-index: 999;
+  top: -8rem;
+  left: 12rem;
+}
+
+.easy {
+  margin-top: -8rem;
+  max-width: 100%;
+  padding: 5rem 10%;
+  background-color: hsl(220deg, 16%, 96%);
+  z-index: 3;
+}
+.easy h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+}
+.easy .cardSection {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+}
+.easy .cardSection .easyCard {
+  padding-right: 1rem;
+}
+.easy .cardSection .easyCard h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+}
+.easy .cardSection .easyCard p {
+  margin-top: 1.5rem;
+}
+
+.article {
+  background-color: hsl(0deg, 0%, 98%);
+  width: 80%;
+  margin: 0 auto;
+}
+.article h2 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+}
+.article .cardSection {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.article .articleCard {
+  background-color: #ffffff;
+  -webkit-border: 1px solid #ffffff;
+  -moz-border: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.article .articleCard img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.article .articleCard .articleWordWrapper {
+  padding: 1rem;
+}
+.article .articleCard .articleWordWrapper h4 {
+  margin: 0.5rem 0;
+}
+.article .articleCard .articleWordWrapper h4 a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(233deg, 26%, 24%);
+}
+.article .articleCard .articleWordWrapper h4 a:hover {
+  color: hsl(192deg, 70%, 51%);
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+  width: 100%;
+  margin: 3rem auto 0 auto;
+  color: #ffffff;
+  padding: 2rem 10%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+footer .footerLeft {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footerLeft .logoNsocial {
+  display: grid;
+  align-content: space-between;
+}
+footer .footerLeft .logoNsocial .social svg {
+  margin-right: 0.7rem;
+}
+footer .footerLeft .logoNsocial .social svg:hover, footer .footerLeft .logoNsocial .social svg:focus {
+  cursor: pointer;
+}
+footer .footerLeft .logoNsocial .social svg:hover path, footer .footerLeft .logoNsocial .social svg:focus path {
+  fill: hsl(136deg, 65%, 51%);
+}
+footer .footerLeft .footerLinks ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footerLeft .footerLinks ul li {
+  padding: 0.3rem;
+}
+footer .footerLeft .footerLinks ul li a {
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+footer .footerLeft .footerLinks ul li a:hover {
+  color: hsl(136deg, 65%, 51%);
+  cursor: pointer;
+}
+footer .footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  row-gap: 1rem;
+}
+footer .footerRight .footer-button {
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 98%);
+  padding: 0.7rem 2.1rem;
+  text-transform: capitalize;
+  -webkit-border: 1px solid #ffffff;
+  -moz-border: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1.5rem;
+  -webkit-border: 1px solid hsl(233deg, 26%, 24%);
+  -moz-border: 1px solid hsl(233deg, 26%, 24%);
+  border: 1px solid hsl(233deg, 26%, 24%);
+}
+footer .footerRight button:hover {
+  background-image: linear-gradient(to right, hsl(136deg, 44%, 63%), hsl(192deg, 59%, 66%));
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

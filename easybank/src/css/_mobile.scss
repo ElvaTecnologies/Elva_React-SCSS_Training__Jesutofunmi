@@ -1,0 +1,51 @@
+@media screen and (max-width: 375px){
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .logo {
+          height: 40px;
+        }
+
+        .nav-toggle {
+          font-size: 1.5rem;
+          color: $darkBlue;
+          background: transparent;
+          border-color: transparent;
+          transition: var(--transition);
+          cursor: pointer;
+        }
+        
+      }
+
+      .nav-desktop{
+        height: 0;
+        overflow: hidden;
+        @include transition;
+        .nav-links{
+          .links > li > a {
+            color: $darkBlue;
+            font-size: 1rem;
+            text-transform: capitalize;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: var(--transition);
+          }
+        }
+
+        .nav-right{
+          display: none;
+        }
+      }
+     
+    
+     
+     
+      
+   
+      // .show-container {
+      //   height: 10rem;
+      // }
+}
